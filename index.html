@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب معدل الطالب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حساب معدل الطالب الجامعي</h1>
+        <form id="gpaForm">
+            <div class="input-group">
+                <label for="grade1">الدرجة 1:</label>
+                <input type="number" id="grade1" placeholder="أدخل الدرجة" required>
+            </div>
+            <div class="input-group">
+                <label for="credits1">الوحدات الدراسية 1:</label>
+                <input type="number" id="credits1" placeholder="أدخل الوحدات" required>
+            </div>
+
+            <div class="input-group">
+                <label for="grade2">الدرجة 2:</label>
+                <input type="number" id="grade2" placeholder="أدخل الدرجة" required>
+            </div>
+            <div class="input-group">
+                <label for="credits2">الوحدات الدراسية 2:</label>
+                <input type="number" id="credits2" placeholder="أدخل الوحدات" required>
+            </div>
+
+            <button type="button" onclick="calculateGPA()">احسب المعدل</button>
+        </form>
+        <h2 id="result">المعدل: -</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
